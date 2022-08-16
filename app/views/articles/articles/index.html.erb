@@ -3,12 +3,7 @@
 <h1>Articles</h1>
 
 <div id="Aeticles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
+  <%= render @articles, :locals => {:style => 'display:block'} %>
 </div>
 
 <%= link_to "New article", new_article_path %>
