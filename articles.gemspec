@@ -1,0 +1,21 @@
+require_relative "lib/articles/version"
+
+Gem::Specification.new do |spec|
+  spec.name        = "articles"
+  spec.version     = Articles::VERSION
+  spec.authors     = ["Kiransai-webonise"]
+  spec.email       = ["kiran.sai@weboniselab.com"]
+  # spec.homepage    = "TODO"
+  spec.summary     = "Articles."
+  spec.description = "Articles."
+    spec.license     = "MIT"
+  
+  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
+  # to allow pushing to a single host or delete this section to allow pushing to any host.
+
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
+    Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  end
+
+  spec.add_dependency "rails", ">= 7.0.3.1"
+end

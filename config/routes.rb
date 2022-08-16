@@ -1,3 +1,3 @@
-Blogtype::Engine.routes.draw do
-  resources :type_blogs
+Articles::Engine.routes.draw do
+	resources :articles
 end
