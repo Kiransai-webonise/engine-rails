@@ -1,0 +1,18 @@
+<div id="<%= article %>">
+  <p>
+    <strong>Article:</strong>
+    <%= article.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= article.text %>
+  </p>
+
+</div>
+<% if action_name == 'index' %>
+<p>
+  <%= link_to "Show this article", article %>
+</p>
+<% end %>
+
